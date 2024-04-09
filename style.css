@@ -67,11 +67,23 @@ a{
  justify-content: space-between;
 }
 
+.parag{
+    font-size: 25px;
+    font-weight: 500;
+
+}
 .list{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 20px;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.list a:hover{
+color: orange;
+opacity: 0.7;
 }
 
 #productsList{
@@ -124,7 +136,7 @@ a{
   
   .social-links a {
     margin: 0 10px;
-    color: #333;
+    color: var(--footer-text);
     text-decoration: none;
   }
   

@@ -9,7 +9,7 @@ let arr = [
         color:"grey"
     },
     {
-        name:'Samsung Galaxy S9 · Дисплей: 5.8" Super AMOLED - 1440 x 2960 · Чип: Samsung Exynos 9 Octa 9810 · Камера: 1 (12 MP) · Батарея: 3000 мАч · OS: Android 10 · Вес: 163 г.',
+        name:'Samsung Galaxy S9 · Дисплей: 5.8" Super AMOLED - 1440 x 2960 · Камера: 1 (12 MP) · Батарея: 3000 мАч · OS: Android 10 · Вес: 163 г.',
         imgSrc:"https://images-na.ssl-images-amazon.com/images/I/61QLEFK6lEL._SL1280_.jpg",
         price: 400,
         installment:"168 634сум/мес",
@@ -39,10 +39,9 @@ arr.forEach(({installment,name,price,imgSrc,color})=>{
     <li class="list-item" style="width:240px; height:350px;">
       <a href="#" style="display:flex; flex-direction:column; gap:10px;">
         <img src=${imgSrc} alt="product img" width = "200" height = "200">
-        <p style="font-size:10px;">${name}</p>
-        <p style="font-size:10px;">${installment}</p>
-        
-        <p >${price}$</p>
+        <p style="font-size:13px;">${name}</p>
+        <mark><p style="font-size:13px;" >${installment}</p></mark>
+        <p>${price}$</p>
         <span style="background-color:${color}; border-radius:25px;"class="color"></span>
       </a>
     <li>`
