@@ -38,10 +38,10 @@ arr.forEach(({installment,name,price,imgSrc,color})=>{
     productsList.innerHTML += `
     <li class="list-item" style="width:240px; height:350px;">
       <a href="#" style="display:flex; flex-direction:column; gap:10px;">
-        <img src=${imgSrc} alt="product img" width = "200" height = "200">
+        <img src=${imgSrc} alt="product img" style="border-radius:8px; text-align:center;" width = "200" height = "200">
         <p style="font-size:13px;">${name}</p>
-        <mark><p style="font-size:13px;" >${installment}</p></mark>
-        <p>${price}$</p>
+        <p style="font-size:14px; color:yellow;" >${installment}</p>
+        <p style="font-size:18px;">${price}$</p>
         <span style="background-color:${color}; border-radius:25px;"class="color"></span>
       </a>
     <li>`
