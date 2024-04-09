@@ -109,5 +109,35 @@ a{
   height: 200px;
   background-color: var(--footer-bg);
   color: var(--footer-text);
+  padding: 20px 0;
+  font-size: 14px;
+  text-align: center;
   border: 1px solid #121251;
 }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .social-links a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .social-links a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 600px) {
+    .footer-content {
+      flex-direction: column;
+    }
+  
+    .social-links {
+      margin-top: 10px;
+    }
+  }
